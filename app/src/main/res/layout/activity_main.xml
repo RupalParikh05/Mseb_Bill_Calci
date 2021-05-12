@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LLparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/towernew">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's Your Bill ?"
+        android:background="#2E77B1"
+        android:gravity="center"
+        android:layout_marginTop="70sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        />
+    <LinearLayout
+        android:id="@+id/LLchild1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:id="@+id/textViewnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9013A7EA"
+            android:text="Number of Units Consumed"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/editTextenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9013A7EA"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:hint="Plz Enter Here"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/LLchild2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewbill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Total Bill is "
+            android:background="#9013A7EA"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/textViewtotalbill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="15dp"
+            android:background="#9013A7EA"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+</LinearLayout>
